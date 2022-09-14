@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag HTML</title>
+</head>
+
+<body>
+    <header>
+        Cabeçalho da Pagina
+    </header>
+    <nav>
+        barra de navegação
+    </nav>
+    </main>
+    <aside>
+        Barra lateral
+
+        <article>
+            artigo
+        </article>
+    </aside>
+    <h1>Titulo Principal</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, incidunt esse ducimus nemo molestiae
+        consequuntur necessitatibus, reiciendis rem officiis, ut tenetur tempore eaque. Quasi, quas quis inventore quos
+        perspiciatis vero!</p>
+
+    <h2>Titulo segundario</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, incidunt esse ducimus nemo molestiae
+        consequuntur necessitatibus, reiciendis rem officiis, ut tenetur tempore eaque. Quasi, quas quis inventore quos
+        perspiciatis vero!</p>
+
+    <img src="/Pratica 01 - HTML - T2M2/assets/transferir.png"
+        alt="imagem de um meme com leonardo dicaprio feito por inteligencia artificial">
+
+    <br />
+    <a href="https://www.thiswaifudoesnotexist.net/" target="_blank">this waifu does not exist</a>
+
+    <section>
+        <h3>Lista não ordenada</h3>
+        <ul>
+            <li>Primeiro item da lista</li>
+            <li>Segundo item da lista</li>
+            <li>Terceiro item da lista</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Lista ordenada</h3>
+        <ol>
+            <li>Primeiro item da lista</li>
+            <li>Segundo item da lista</li>
+            <li>Terceiro item da lista</li>
+        </ol>
+    </section>
+    <section>
+        <h3>Lista de Definição</h3>
+        <dl>
+            <dt>
+            <dd>Primeiro item da lista</dd>
+            </dt>
+            <dt>
+            <dd>Segundo item da lista</dd>
+            </dt>
+            <dt>
+            <dd>Terceiro item da lista</dd>
+            </dt>
+        </dl>
+    </section>
+
+    <video src="https://youtu.be/FWAYD0c3AwE" autoplay="true" loop controls="true"> </video>
+    <section>
+        <h3>Tabela simples</h3>
+        <table border="1">
+            <tr>
+                <td>Alex</td>
+                <td>HTML</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>HTML</td>
+                <td>10</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <h3>Tabela mais elaborada</h3>
+        <table border="1">
+            <tr>
+                <th>Aluno</th>
+                <th>Matéria</th>
+                <th>Nota</th>
+            </tr>
+            <tr>
+                <td>Alex</td>
+                <td>HTML</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>HTML</td>
+                <td>10</td>
+            </tr>
+        </table>
+    </section>
+    <!--Tabela com cabeçalho e rodapé-->
+    <section>
+        <h3>Tabeça com Cabeçalho e rodapé</h3>
+        <table width="100%" border="1">
+
+            <thead>
+                <tr>
+                    <th>Mês</th>
+                    <th>Horas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Junho</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Junho</td>
+                    <td>30</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>70</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <!--Tabela com colspan-->
+    <section>
+        <h3>Tabela com colspan</h3>
+        <table width="100%" border="1">
+            <tr>
+                <th>Aluno</th>
+                <th colspan="2">Disciplinas</th>
+            </tr>
+            <tr>
+                <td>Alex</td>
+                <td>HTML</td>
+                <td>Ambiente Web</td>
+            </tr>
+        </table>
+    </section>
+    <!--Tabaela com rowspan-->
+    <section>
+        <h3>Tabela com rowspan</h3>
+        <table width="100%" border="1">
+            <tr>
+                <th>Aluno:</th>
+                <td>Alex</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Disciplinas:</th>
+                <td>HTML</td>
+            </tr>
+            <tr>
+                <td>Ambiente Web</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <form action="" method="post">
+            <!--Dados Gerais FORM-->
+            <fieset>
+                <legend>Dados gerais</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" minlength="3" id="nome" />
+
+                <label for="data_nascimento">Data de Nascimento:</label>
+                <input type="text" id="data_nascimento" />
+
+                <label for="cpf">CPF</label>
+                <input type="cpf" maxlength="11" id="cpf" />
+            </fieset>
+
+            <fieset>
+                <!--Endereço-->
+                <Legend>Endereços</Legend>
+                <label for="tipo_endereco">Tipo:</label>
+                <select id="tipo_endereco">
+                    <option value="">Selecione</option>
+                    <option value="rua">Rua</option>
+                    <option value="estrada">Estrada</option>
+                    <option value="rodovia">Rodovia</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="logradouro_endereco">Logradouro:</label>
+                <input type="text" id="logradouro_endereco" />
+
+                <label for="numero_endereco">Nº:</label>
+                <input type="text" id="numero_endereco" />
+
+                <label for="complemento_endereco">Complemento</label>
+                <input type="complemento_endereco" id="complemento_endereco" />
+            </fieset>
+            <fieset>
+                <!--Fale conosco-->
+                <legend>Fale conosco</legend>
+                <label for="msg">Mensagem:</label>
+                <textarea id="msg"></textarea>
+            </fieset>
+
+            <fieset>
+                <!--Butões-->
+                <button type="submit">Enviar sua mensagem</button>
+                <button type="reset">Limpar formulário</button>
+            </fieset>
+        </form>
+    </section>
+    <main>
+        <footer>
+            Rodapé
+        </footer>
+</body>
+
+</html>
